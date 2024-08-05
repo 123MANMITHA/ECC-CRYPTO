@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Encryption with ECC</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Encryption with ECC</h1>
+        <textarea id="email_content" placeholder="Enter your  content here..."></textarea>
+        <button onclick="generateKeys()">Generate Keys</button>
+        <button onclick="encryptEmail()">Encrypt Email</button>
+        <button onclick="decryptEmail()">Decrypt Email</button>
+        <button onclick="signEmail()">Sign Email</button>
+        <button onclick="verifySignature()">Verify Signature</button>
+        <div>
+            <h3>Output:</h3>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
